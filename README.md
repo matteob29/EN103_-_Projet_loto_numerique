@@ -162,7 +162,8 @@ Le dépôt [EN103_-_Projet_loto](https://github.com/matteob29/EN103_-_Projet_lot
 
 - [Datasheet/](./Datasheet) → Fiches techniques du FPGA
 - [Images/](./Images) → Schématiques et chronogrammes
-- [Rapport/](./Rapport) → Rapport complet du projet LOTO (EN103 - Projet Loto.pdf)  
+- [Rapport/](./Rapport) → Rapport complet du projet LOTO (EN103 - Projet Loto.pdf)
+- [Vivado/](./Vivado) → Projet et codes VHDL sur Vivado
 - [README.md](./README.md)
 
 ---
