@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Apr 18 19:47:01 2025
+| Host         : corneille running 64-bit AlmaLinux release 9.3 (Shamrock Pampas Cat)
+| Command      : report_control_sets -verbose -file top_lvl_aff_control_sets_placed.rpt
+| Design       : top_lvl_aff
+| Device       : xc7a50t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     8 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              49 |           13 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              48 |           17 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | UUT14/UUT2/r_prst_reg[1]_0[0] | rst_IBUF         |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | UUT14/UUT2/r_prst_reg[1]_1[0] | rst_IBUF         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | UUT14/UUT2/E[0]               | rst_IBUF         |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | UUT14/UUT2/r_prst_reg[0]_0[0] | rst_IBUF         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | UUT14/UUT2/r_prst_reg[0]_1[0] | rst_IBUF         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | UUT14/UUT2/r_prst_reg[0]_2[0] | rst_IBUF         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | UUT2/E[0]                     | rst_IBUF         |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | UUT2/clk_3kHz                 | rst_IBUF         |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG |                               | rst_IBUF         |               13 |             49 |         3.77 |
++----------------+-------------------------------+------------------+------------------+----------------+--------------+
+
+

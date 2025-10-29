@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Apr 18 19:45:52 2025
+# Process ID: 349665
+# Current directory: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1
+# Command line: vivado -log top_lvl_aff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lvl_aff.tcl
+# Log file: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1/top_lvl_aff.vds
+# Journal file: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1/vivado.jou
+# Running On: corneille, OS: Linux, CPU Frequency: 3400.000 MHz, CPU Physical cores: 6, Host memory: 16351 MB
+#-----------------------------------------------------------
+source top_lvl_aff.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/utils_1/imports/synth_1/CE_25MHz.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/utils_1/imports/synth_1/CE_25MHz.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_lvl_aff -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 349783
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/xilinx/2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2256.688 ; gain = 370.801 ; free physical = 2841 ; free virtual = 10603
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3842.617; parent = 2256.691; children = 1585.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_lvl_aff' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:42]
+INFO: [Synth 8-3491] module 'CE_1Hz' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_1Hz.vhd:34' bound to instance 'UUT1' of component 'CE_1Hz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'CE_1Hz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_1Hz.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'CE_1Hz' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_1Hz.vhd:40]
+INFO: [Synth 8-3491] module 'CE_3kHz' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_3kHz.vhd:34' bound to instance 'UUT2' of component 'CE_3kHz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'CE_3kHz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_3kHz.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'CE_3kHz' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_3kHz.vhd:40]
+INFO: [Synth 8-3491] module 'CE_25MHz' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_25MHz.vhd:34' bound to instance 'UUT3' of component 'CE_25MHz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'CE_25MHz' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_25MHz.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'CE_25MHz' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/CE_25MHz.vhd:40]
+INFO: [Synth 8-3491] module 'mux6' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:34' bound to instance 'UUT4' of component 'mux6' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'mux6' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:45]
+WARNING: [Synth 8-614] signal 'E0' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+WARNING: [Synth 8-614] signal 'E1' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+WARNING: [Synth 8-614] signal 'E2' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+WARNING: [Synth 8-614] signal 'E3' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+WARNING: [Synth 8-614] signal 'E4' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+WARNING: [Synth 8-614] signal 'E5' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'mux6' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux6.vhd:45]
+INFO: [Synth 8-3491] module 'mux4_7' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:34' bound to instance 'UUT5' of component 'mux4_7' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'mux4_7' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:43]
+INFO: [Synth 8-226] default block is never used [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:49]
+WARNING: [Synth 8-614] signal 'E0' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:47]
+WARNING: [Synth 8-614] signal 'E1' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:47]
+WARNING: [Synth 8-614] signal 'E2' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:47]
+WARNING: [Synth 8-614] signal 'E3' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux4_7' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_7.vhd:43]
+INFO: [Synth 8-3491] module 'conv_b2_b10' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/conv_b2_b10.vhd:34' bound to instance 'UUT6' of component 'conv_b2_b10' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'conv_b2_b10' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/conv_b2_b10.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'conv_b2_b10' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/conv_b2_b10.vhd:40]
+INFO: [Synth 8-3491] module 'chiffre_7segments' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/chiffre_7segments.vhd:34' bound to instance 'UUT7' of component 'chiffre_7segments' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'chiffre_7segments' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/chiffre_7segments.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'chiffre_7segments' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/chiffre_7segments.vhd:39]
+INFO: [Synth 8-3491] module 'chiffre_7segments' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/chiffre_7segments.vhd:34' bound to instance 'UUT8' of component 'chiffre_7segments' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:195]
+INFO: [Synth 8-3491] module 'chiffre_7segments' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/chiffre_7segments.vhd:34' bound to instance 'UUT9' of component 'chiffre_7segments' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:199]
+INFO: [Synth 8-3491] module 'compteur_mod6' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6.vhd:34' bound to instance 'UUT10' of component 'compteur_mod6' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'compteur_mod6' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compteur_mod6' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6.vhd:41]
+INFO: [Synth 8-3491] module 'compteur_mod4' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod4.vhd:34' bound to instance 'UUT11' of component 'compteur_mod4' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'compteur_mod4' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod4.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'compteur_mod4' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod4.vhd:41]
+INFO: [Synth 8-3491] module 'increment' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/increment.vhd:34' bound to instance 'UUT12' of component 'increment' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'increment' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/increment.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'increment' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/increment.vhd:39]
+INFO: [Synth 8-3491] module 'mux4_4' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:34' bound to instance 'UUT13' of component 'mux4_4' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'mux4_4' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:43]
+INFO: [Synth 8-226] default block is never used [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:49]
+WARNING: [Synth 8-614] signal 'E0' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:47]
+WARNING: [Synth 8-614] signal 'E1' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:47]
+WARNING: [Synth 8-614] signal 'E2' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:47]
+WARNING: [Synth 8-614] signal 'E3' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux4_4' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4_4.vhd:43]
+INFO: [Synth 8-3491] module 'top_lvl_tirage' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:34' bound to instance 'UUT14' of component 'top_lvl_tirage' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'top_lvl_tirage' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:48]
+INFO: [Synth 8-3491] module 'compteur_mod50' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod50.vhd:34' bound to instance 'UUT1' of component 'compteur_mod50' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'compteur_mod50' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod50.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'compteur_mod50' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod50.vhd:42]
+INFO: [Synth 8-3491] module 'compteur_mod6_tirage' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6_tirage.vhd:34' bound to instance 'UUT2' of component 'compteur_mod6_tirage' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'compteur_mod6_tirage' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6_tirage.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'compteur_mod6_tirage' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/compteur_mod6_tirage.vhd:42]
+INFO: [Synth 8-3491] module 'comparateur' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/comparateur.vhd:34' bound to instance 'UUT3' of component 'comparateur' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'comparateur' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/comparateur.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'comparateur' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/comparateur.vhd:45]
+INFO: [Synth 8-3491] module 'mem' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mem.vhd:34' bound to instance 'UUT4' of component 'mem' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'mem' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mem.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'mem' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mem.vhd:49]
+INFO: [Synth 8-3491] module 'FSM' declared at '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/FSM.vhd:34' bound to instance 'UUT5' of component 'FSM' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'FSM' [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/FSM.vhd:45]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/FSM.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/FSM.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'top_lvl_tirage' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_tirage.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top_lvl_aff' (0#1) [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/top_lvl_aff.vhd:42]
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2325.656 ; gain = 439.770 ; free physical = 2928 ; free virtual = 10691
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3911.586; parent = 2325.660; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2340.500 ; gain = 454.613 ; free physical = 2924 ; free virtual = 10687
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3926.430; parent = 2340.504; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2340.500 ; gain = 454.613 ; free physical = 2924 ; free virtual = 10687
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3926.430; parent = 2340.504; children = 1585.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2340.500 ; gain = 0.000 ; free physical = 2918 ; free virtual = 10680
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/constrs_1/imports/Téléchargements/Nexys-A7-50T-Master.xdc]
+Finished Parsing XDC File [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/constrs_1/imports/Téléchargements/Nexys-A7-50T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/constrs_1/imports/Téléchargements/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lvl_aff_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lvl_aff_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2504.250 ; gain = 0.000 ; free physical = 2764 ; free virtual = 10526
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2504.250 ; gain = 0.000 ; free physical = 2764 ; free virtual = 10526
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/opt/xilinx/2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2902 ; free virtual = 10664
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2902 ; free virtual = 10664
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2902 ; free virtual = 10664
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'prst_state_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  neutre |                            00001 |                              100
+                 compter |                            00010 |                              000
+             recommencer |                            00100 |                              010
+             enregistrer |                            01000 |                              001
+                     fin |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'prst_state_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2890 ; free virtual = 10652
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design top_lvl_aff has port AN[4] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (UUT14/UUT5/FSM_onehot_prst_state_reg[4]) is unused and will be removed from module top_lvl_aff.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2868 ; free virtual = 10635
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.685; parent = 1258.828; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2747 ; free virtual = 10514
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1566.726; parent = 1356.911; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2745 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1566.726; parent = 1356.911; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2743 ; free virtual = 10510
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT2   |    27|
+|5     |LUT3   |    32|
+|6     |LUT4   |    12|
+|7     |LUT5   |    22|
+|8     |LUT6   |    48|
+|9     |FDCE   |    94|
+|10    |FDPE   |     3|
+|11    |IBUF   |     3|
+|12    |OBUF   |    15|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2744 ; free virtual = 10511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.878; parent = 1358.063; children = 209.856
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4058.164; parent = 2472.238; children = 1585.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2504.250 ; gain = 454.613 ; free physical = 2795 ; free virtual = 10561
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2504.250 ; gain = 618.363 ; free physical = 2795 ; free virtual = 10561
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2504.250 ; gain = 0.000 ; free physical = 2912 ; free virtual = 10679
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2504.250 ; gain = 0.000 ; free physical = 2862 ; free virtual = 10629
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: fa30cb67
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2504.250 ; gain = 932.465 ; free physical = 3074 ; free virtual = 10840
+INFO: [Common 17-1381] The checkpoint '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1/top_lvl_aff.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_lvl_aff_utilization_synth.rpt -pb top_lvl_aff_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 18 19:46:27 2025...

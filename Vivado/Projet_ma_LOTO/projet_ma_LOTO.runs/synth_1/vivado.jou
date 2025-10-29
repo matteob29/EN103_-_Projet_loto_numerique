@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Apr 18 19:45:52 2025
+# Process ID: 349665
+# Current directory: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1
+# Command line: vivado -log top_lvl_aff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lvl_aff.tcl
+# Log file: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1/top_lvl_aff.vds
+# Journal file: /net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.runs/synth_1/vivado.jou
+# Running On: corneille, OS: Linux, CPU Frequency: 3400.000 MHz, CPU Physical cores: 6, Host memory: 16351 MB
+#-----------------------------------------------------------
+source top_lvl_aff.tcl -notrace

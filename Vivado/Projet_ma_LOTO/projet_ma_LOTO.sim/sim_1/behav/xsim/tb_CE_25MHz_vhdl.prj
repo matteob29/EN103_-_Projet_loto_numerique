@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../projet_ma_LOTO.srcs/sources_1/new/CE_25MHz.vhd" \
+"../../../../projet_ma_LOTO.srcs/sim_1/new/tb_CE_25MHz.vhd" \
+
+# Do not sort compile order
+nosort

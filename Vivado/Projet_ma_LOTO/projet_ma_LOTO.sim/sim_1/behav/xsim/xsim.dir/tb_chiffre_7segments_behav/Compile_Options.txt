@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_chiffre_7segments_behav" "xil_defaultlib.tb_chiffre_7segments" -log "elaborate.log" 

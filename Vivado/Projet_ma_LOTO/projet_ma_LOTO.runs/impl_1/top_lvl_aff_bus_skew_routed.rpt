@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Apr 18 19:47:15 2025
+| Host         : corneille running 64-bit AlmaLinux release 9.3 (Shamrock Pampas Cat)
+| Command      : report_bus_skew -warn_on_violation -file top_lvl_aff_bus_skew_routed.rpt -pb top_lvl_aff_bus_skew_routed.pb -rpx top_lvl_aff_bus_skew_routed.rpx
+| Design       : top_lvl_aff
+| Device       : 7a50t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

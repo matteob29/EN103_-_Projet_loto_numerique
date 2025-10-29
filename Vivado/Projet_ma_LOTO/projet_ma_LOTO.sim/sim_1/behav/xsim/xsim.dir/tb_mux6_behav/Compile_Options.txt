@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_mux6_behav" "xil_defaultlib.tb_mux6" -log "elaborate.log" 

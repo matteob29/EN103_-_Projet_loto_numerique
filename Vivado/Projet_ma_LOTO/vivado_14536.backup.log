@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr 15 16:40:26 2025
+# Process ID         : 14536
+# Current directory  : C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent15700 C:\Users\matte\OneDrive\Documents\Cours Enseirb\EN103\projet_ma_LOTO\projet_ma_LOTO.xpr
+# Log file           : C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/vivado.log
+# Journal file       : C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO\vivado.jou
+# Running On         : Asus_de_Matteo
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 4800H with Radeon Graphics         
+# CPU Frequency      : 2895 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33737 MB
+# Swap memory        : 29553 MB
+# Total Virtual      : 63291 MB
+# Available Virtual  : 48015 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project {C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/projet_ma_LOTO.xpr}
+INFO: [Project 1-313] Project file moved from '/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/projet_ma_LOTO.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4.vhd', nor could it be found using path 'C:/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sources_1/new/mux4.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sim_1/new/tb_mux4.vhd', nor could it be found using path 'C:/net/netud/e/abromet/Documents/E1/EN103/projet_ma_LOTO/projet_ma_LOTO.srcs/sim_1/new/tb_mux4.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'projet_ma_LOTO.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+ERROR: [Common 17-1293] The path 'C:/Users/matte/OneDrive/Documents/Cours Enseirb/EN103/projet_ma_LOTO/projet_ma_LOTO.cache/wt' already exists, is a directory, but is not writable.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 15 17:04:36 2025...
